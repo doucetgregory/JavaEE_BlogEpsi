@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Veuillez vous connecter</h1>
+
+    <form id="form_authentification" style="width: 100%; text-align: center;" method="post" action="/Auth">
+        <label for="user_name">Entrer votre prénom :</label>
+        <input type="text" id="user_name" name="user_name">
+        <br/>
+        <label for="user_mdp">Entrer votre mot de passe :</label>
+        <input type="text" id="user_mdp" name="user_mdp">
+        <br/>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <h1 style="text-align: center;">Souhaitez vous vous enregistrer ?</h1>
+
+    <form id="form_goToRegistry" style="width: 100%; text-align: center;" method="get" action="/Registry">
+        <button type="submit">Création de compte</button>
+    </form>
+
+</body>
+</html>
